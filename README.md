@@ -2,7 +2,6 @@
 
 A full-stack web application built with React, Node.js, Express, and MongoDB that efficiently manages records while preventing duplicate entries. The application provides a clean and responsive interface with complete CRUD (Create, Read, Update, Delete) functionality and demonstrates the implementation of RESTful APIs and MongoDB integration.
 
----
 
 📌 Overview
 
@@ -16,7 +15,6 @@ This project demonstrates:
 - React Frontend Development
 - Backend Integration using Axios
 
----
 
 ✨ Features
 
@@ -28,7 +26,6 @@ This project demonstrates:
 - 🎨 Responsive User Interface
 - 🔗 RESTful API Integration
 
----
 
 🛠️ Tech Stack
 
@@ -54,7 +51,6 @@ Development Tools
 - Git & GitHub
 - Postman
 
----
 
 📂 Project Structure
 
@@ -78,7 +74,6 @@ Data-Redundancy-Removal-System
 ├── .gitignore
 └── README.md
 
----
 
 ⚙️ Installation
 
@@ -90,15 +85,12 @@ Navigate to the Project
 
 cd codealpha-task-Data-Redundancy-Removal-System
 
----
 
 Backend Setup
 
 cd backend
 npm install
 npm start
-
----
 
 Frontend Setup
 
@@ -112,7 +104,6 @@ Open:
 
 http://localhost:5173
 
----
 
 📡 API Endpoints
 
@@ -122,11 +113,16 @@ GET| "/api/data/all"| Fetch all records
 PUT| "/api/data/update/:id"| Update a record
 DELETE| "/api/data/delete/:id"| Delete a record
 
----
-
 📸 Project Screenshots
+ 
 
 «Add screenshots of your application here.»
+
+##Image 1
+![Home page](assets/data redundancy 1.png)
+##Image 2
+![Add Record](assets/data redundancy 2.png)
+
 
 Example:
 
@@ -134,7 +130,6 @@ Example:
 - Add Record
 - Record List
 
----
 
 🚀 Future Enhancements
 
@@ -147,7 +142,6 @@ Example:
 - ☁️ Cloud Deployment
 - 🤖 AI-based Duplicate Detection
 
----
 
 🎯 Learning Outcomes
 
@@ -162,7 +156,6 @@ Through this project I gained practical experience in:
 - CRUD Operations
 - Frontend-Backend Integration
 
----
 
 👩‍💻 Author
 
@@ -175,15 +168,15 @@ https://github.com/sahuaaradhya006-a11y
 www.linkedin.com/in/aaradhyasahu
 
 
-
----
-
 ⭐ Support
 
 If you found this project helpful, consider giving it a ⭐ on GitHub.
 
----
+
 
 📄 License
+ 
+This project is developed for educational, learning, and portfolio purposes.
 
 This project is developed for educational, learning, and portfolio purposes.
+ 
