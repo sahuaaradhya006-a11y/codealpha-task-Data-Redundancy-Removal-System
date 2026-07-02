@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import DuplicateModal from "./components/DuplicateModal";
 
-const baseURL = "https://data-redundancy-removal-system-owmo.onrender.com";
+const baseURL = "https://data-redundancy-removal-system-owmo.onrender.com/api/data";
 
 function App() {
   const [content, setContent] = useState("");
