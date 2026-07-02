@@ -82,16 +82,6 @@ Data-Redundancy-Removal-System
 └── README.md
 ```
 
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone YOUR_GITHUB_REPO_URL
-```
-
 ### Backend
 
 ```bash
@@ -148,7 +138,7 @@ JWT_SECRET=your_secret_key
 
 **Aaradhya Sahu**
 
-GitHub: 
+GitHub: https://github.com/sahuaaradhya006-a11y/codealpha-task-Data-Redundancy-Removal-System.git
 
 LinkedIn: www.linkedin.com/in/aaradhyasahu
 
