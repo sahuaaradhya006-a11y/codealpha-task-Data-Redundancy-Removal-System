@@ -182,3 +182,17 @@
     border-right-color: var(--border);
   }
 }
+@keyframes pop {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop {
+  animation: pop 0.22s ease-out;
+}

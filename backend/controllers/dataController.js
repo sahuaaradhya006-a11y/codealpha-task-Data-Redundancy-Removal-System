@@ -1,26 +1,48 @@
 const Record = require("../models/Record");
+const { findDuplicate } = require("../services/redundancyService");
 
 // CREATE (Add Data)
 exports.addData = async (req, res) => {
   try {
     const { content } = req.body;
 
-    if (!content) {
-      return res.status(400).json({
-        message: "Content is required"
+    // Get all existing records
+    const records = await Record.find();
+
+    // Check for duplicate using similarity engine
+    const result = findDuplicate(content, records);
+
+    if (result.duplicate) {
+      return res.status(409).json({
+        success: false,
+        message: "Duplicate record detected.",
+        score: result.score,
+        matchedWith: result.matchedRecord?.content || ""
       });
     }
 
-    const newRecord = await Record.create({ content });
+    // Save new record
+    const record = await Record.create({ content });
 
     res.status(201).json({
-      message: "Data added successfully",
-      data: newRecord
+      success: true,
+      message: "Record added successfully.",
+      data: record,
+      score: 0
     });
 
-  } catch (error) {
+  } catch (err) {
+
+    if (err.code === 11000) {
+      return res.status(409).json({
+        success: false,
+        message: "Duplicate record found."
+      });
+    }
+
     res.status(500).json({
-      message: error.message
+      success: false,
+      message: err.message,
     });
   }
 };
